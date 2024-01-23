@@ -4,10 +4,10 @@ const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
-const dist = "./dist/";
+// const dist = "./dist/";
+const dist = "/Desktop/MAMP/htdocs/test";
 
 // Служит для того, чтобы мы могли отслеживать измнения, которые вносим в HTML-файл
-
 gulp.task("copy-html", () => {
   return gulp.src("./src/index.html") // берем по адресу src файл html
     .pipe(gulp.dest(dist)) // после перемещаем в папку dist
